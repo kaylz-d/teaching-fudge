@@ -1,0 +1,8 @@
+.text-outline-white {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.nav-gradient {
+    background-image: -webkit-radial-gradient(circle, #ff38c7, white);
+}

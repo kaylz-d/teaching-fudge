@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Fudge</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,16 +19,19 @@
 
     <header>
 
-        <nav class="h-20 w-full bg-[#ff3da1] align-middle text-white text-2xl -mt-4">
+        <nav class="h-20 w-full nav-gradient align-middle text-white text-2xl -mt-4">
             <br>
             <ul class="justify-center flex gap-8 md:gap-10 lg:gap-30 drop-shadow drop-shadow-[#521c4a]/50">
                 <li>Home</li>
-                <li>About</li>
+                <li><a href="../about.html">About</a></li>
                 <li>Contact</li>
             </ul>
         </nav>
 
-        <h1 class="text-center text-7xl my-14 -mb-10">Kaylee Dinh</h1>
+        <h1 class="text-center text-9xl my-14 -mb-10 text-outline-white drop-shadow drop-shadow-[#521c4a]/50">
+            <p class="bg-gradient-to-t from-[#ffe6fa] via-[#ff00c8] to-[#ff2ecb] inline-block p-2 text-transparent bg-clip-text">Kaylee Dinh</p>
+        </h1>
+
 
         <!-- <div class="container mx-auto text-center">
             <h1 class="text-3xl">My Fudge Website</h1>
@@ -35,28 +39,16 @@
     </header>
 
     <main class="mx-auto my-4 flex items- justify-center align-middle">
-        <div class="columns-3 gap-10 bg-transparent h-100 w-full m-20 text-center border-transparent rounded-sm">
-            <div class="h-full bg-white drop-shadow drop-shadow-[#521c4a]/50 border-transparent rounded-sm ">
-                <p>Basic text</p>
-            </div>
-            <div class="h-full bg-white drop-shadow drop-shadow-[#521c4a]/50 border-transparent rounded-sm">
-                <p>lol col 2</p>
-            </div>
-            <div class="h-full bg-white drop-shadow drop-shadow-[#521c4a]/50 border-transparent rounded-sm">
-                <p>lol col 3</p>
-            </div>
-        </div>
-    </main>
-
-     <main class="mx-auto my-4 flex items- justify-center align-middle">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 bg-transparent h-100 w-full m-20 text-center border-transparent rounded-sm">
-            <div class="h-full bg-white drop-shadow drop-shadow-[#521c4a]/50 border-transparent rounded-sm">
-                <p>Basic text</p>
+            <div class="h-full w-full bg-white drop-shadow drop-shadow-[#521c4a]/50 border-transparent rounded-sm flex justify-center items-center">
+                <p class>Basic text</p>
+                <img src="" alt="">
+
             </div>
-            <div class="h-full bg-white drop-shadow drop-shadow-[#521c4a]/50 border-transparent rounded-sm">
-                <p>lol col 2</p>
+            <div class="h-full w-full bg-white drop-shadow drop-shadow-[#521c4a]/50 border-transparent rounded-sm flex justify-center items-center">
+                <p>lol col 2 <span class="font-bold">but i also want this to be bold</span></p>
             </div>
-            <div class="h-full bg-white drop-shadow drop-shadow-[#521c4a]/50 border-transparent rounded-sm">
+            <div class="h-full w-full bg-white drop-shadow drop-shadow-[#521c4a]/50 border-transparent rounded-sm flex justify-center items-center">
                 <p>lol col 3</p>
             </div>
         </div>
