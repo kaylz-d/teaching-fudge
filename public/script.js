@@ -4,9 +4,16 @@ fetch("/stats")
         return response.json();
     })
     .then(data => {
-        document.getElementById("hackatime-output").textContent = JSON.stringify(data, null, 2);
+        
+        console.log("API data: ", data);
+        
+        // document.getElementById("hackatime-output").textContent = JSON.stringify(data, null, 2);
+        const daOutput = document.getElementById("hackatime-output");
+
+        const humanReadable = data.data.human_readable_total;
+        daOutput.textContent = "Kaylee's Hackatime stats today: " + humanReadable;
     })
     .catch(error => {
         console.error("ughhh fetch error:", error);
-        documemt.getElementById("hackatime-output").textContent = "it no load";
+        document.getElementById("hackatime-output").textContent = "it no load";
     })
