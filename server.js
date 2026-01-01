@@ -3,6 +3,7 @@ const cors = require ("cors");
 const dayjs = require ("dayjs")
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 // copied and pasted this part
@@ -22,6 +23,7 @@ app.get("/stats", cors(), async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log(`Server running at http://localhost:3000`);
+  console.log('lol idk bruh')
 });
