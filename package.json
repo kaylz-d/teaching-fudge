@@ -1,0 +1,27 @@
+{
+  "name": "teaching-fudge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaylz-d/teaching-fudge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kaylz-d/teaching-fudge/issues"
+  },
+  "homepage": "https://github.com/kaylz-d/teaching-fudge#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.19",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  }
+}

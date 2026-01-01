@@ -1,0 +1,28 @@
+.text-outline-white {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.nav-gradient {
+    background-image: -webkit-radial-gradient(circle, #ff38c7, white);
+}
+
+.custom-cursor {
+    /* cursor: url(assets/mametchi-tamagotchi.png) auto !important; */
+    /* cursor: url(https://ani.cursors-4u.net/nature/nat-11/nat1056.cur), auto !important; */
+    /* cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1135.ani), url(https://cur.cursors-4u.net/anime/ani-12/ani1135.png), auto !important; */
+    /* cursor: url(https://cur.cursors-4u.net/anime/ani-1/ani195.ani), url(https://cur.cursors-4u.net/anime/ani-1/ani195.png), auto !important; */
+    cursor: url(https://cur.cursors-4u.net/anime/ani-1/ani181.cur), auto !important;
+    /* i took this from https://www.cursors-4u.com */
+}
+
+.puppy.animate {
+    animation-name: puppypet;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes puppypet {
+    
+}
