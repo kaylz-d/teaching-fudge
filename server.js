@@ -24,7 +24,7 @@ app.get("/stats", cors(), async (req, res) => {
   }
 });
 
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
