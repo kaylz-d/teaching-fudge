@@ -9,7 +9,7 @@ app.use(cors());
 // copied and pasted this part
 app.use(express.static("public")); // serve your static site
 
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
