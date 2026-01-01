@@ -16,7 +16,7 @@ app.get("/stats", cors(), async (req, res) => {
     // const slack_id = "U08QMC72ZST"
     const startOfDay = dayjs().startOf("day").format("YYYY-MM-DD");
     const endOfDay = dayjs().endOf("day").format("YYYY-MM-DD");
-    const response = await fetch(`https://hackatime.hackclub.com/api/v1/users/U08QMC72ZST/stats?start_date=${startofday}&end_date=${endofday}`);
+    const response = await fetch(`https://hackatime.hackclub.com/api/v1/users/U08QMC72ZST/stats?start_date=${startOfDay}&end_date=${endOfDay}`);
     const data = await response.json();
     res.json(data);
   } catch (err) {
