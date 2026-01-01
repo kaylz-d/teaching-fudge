@@ -9,6 +9,10 @@ app.use(cors());
 // copied and pasted this part
 app.use(express.static("public")); // serve your static site
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
 // example API route
 app.get("/stats", cors(), async (req, res) => {
   try {
@@ -24,6 +28,6 @@ app.get("/stats", cors(), async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:3000`);
+  console.log("Server running at port" + port);
   console.log('lol idk bruh')
 });
