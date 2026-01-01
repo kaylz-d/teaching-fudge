@@ -9,10 +9,6 @@ app.use(cors());
 // copied and pasted this part
 app.use(express.static("public")); // serve your static site
 
-app.get("*", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
-});
-
 // example API route
 app.get("/stats", cors(), async (req, res) => {
   try {
@@ -25,6 +21,10 @@ app.get("/stats", cors(), async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: "Failed to fetch API" });
   }
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
 });
 
 app.listen(port, () => {
