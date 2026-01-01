@@ -11,6 +11,7 @@ fetch("/stats")
         const daOutput = document.getElementById("hackatime-output");
 
         const humanReadable = data.data.human_readable_total;
+        console.log("human readable:", humanReadable);
         daOutput.textContent = "Kaylee's Hackatime stats today: " + humanReadable;
     })
     .catch(error => {
